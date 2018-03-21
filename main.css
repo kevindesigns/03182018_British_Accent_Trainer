@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css?family=Karla');
+body {font-family: 'Karla', sans-serif;} 
+
+/*url(backgroundPhoto.jpg) no-repeat 0 0 fixed*/
+
+html {
+	background-color: rgb(209, 149, 149); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: rgb(2509, 149, 149);
+}
+
+#about {
+	padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+}
+
+span.highlight{
+	background-color: white;
+	box-shadow: 1vw 0 0 white, -1vw 0 0  white;
+    padding: 2px 0;
+
+
+/*span.highlight2{
+	color: black;
+	background-color: white;
+	box-shadow: 2vw 0 0 white, -2vw 0 0 white;
+    padding: 3px 0;
+
+
+.bg{
+  position: block; 
+  top: 0; 
+  left: 0; 
+   
+  margin: 0, auto;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;	
+  z-index: 0;
+}
+
+
+/*#wrapper{
+	margin: 0, auto;
+	text-align: center;
+	padding-top: 10vw;	
+	z-index: 2;
+}*/
+
+.againbutton{
+	background-color:  #ec0047;
+	color: white;
+	position: fixed;
+	margin-top: 25vw;
+	margin-left: 45%;
+	width: 3vw;
+	height: 3vw;
+	border-radius: 3vw;
+
+	font-family: Karla, Arial, Helvetica, sans-serif;
+	font-size: 1.5vw;
+	word-wrap: break-word;
+	text-align: center;
+}
+
+.againbutton:hover{
+	background-color: white;
+	color:  #ec0047;
+}
+
+.againbutton:focus{
+	outline: none;
+	/*border: none;*/
+}
+
+#ASK{
+	position: relative;
+}
+
+
+
+#D4CMOM{
+	position: center;
+	color: #005eec;
+	margin-top: 18vw;
+	margin-left: 41%;
+	font-family: Karla, Arial, Helvetica, sans-serif;
+	font-size: 1vw;
+}
+
+
+#strategyText {
+	width: 40%;
+	font-size: 2.5vw;
+	font-family: Karla, Arial, Helvetica, sans-serif;
+	word-wrap: break-word;
+	color: #005eec;
+	position: center;
+	display: none;
+	margin-top: 11vw;
+	margin-left: 31%;
+}
+
+#blank{
+	width: 40%;
+	font-size: 2.5vw;
+	font-family: Karla, Arial, Helvetica, sans-serif;
+	word-wrap: break-word;
+	color: #ec0047;
+	position: center;
+	margin-top: 11vw;
+	margin-left: 31%;	
+}
+
+
+@media only screen and (min-width : 320px) {
+
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+ 
+ .againbutton{
+ 	display: block;
+ 	margin-left: 42%;
+ 	margin-right: 50%;
+    /*margin: 0 auto;*/
+    margin-top: 75vh;
+    font-size: 2.5vw;
+    width: 3vw;
+	height: 3vw;
+	border-radius: 7vw;
+	/*text-align: center;*/	
+ }
+
+#D4CMOM{
+	display: block;
+	color: black;
+	margin-top: 85vh;
+	margin-left: 44%;
+	margin-right: 50%;
+	color: white;
+	font-size: 3vw;
+}
+
+#strategyText {
+	width: 80%;
+	font-size: 2.5vw;
+	color: #ec0047;
+	position: fixed;
+	display: none;
+	margin-top: 2vw;
+	margin-left: 10%;
+}
+
+#blank{
+	width: 80%;
+	font-size: 2.5vw;
+	color: #ec0047;
+	position: fixed;
+	margin-top: 2vw;
+	margin-left: 10%;
+	}
+
+span.highlight{
+	background-color: white;
+	box-shadow: 2vw 0 0 white, -2vw 0 0 white;
+    padding: 3px 0;
+}
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+ 
+
+}

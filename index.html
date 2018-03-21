@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<title>Trainer</title>
+
+<link rel="stylesheet" href="main.css">
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="icon" href="favicon.ico">
+
+<body>
+
+<div id="about">
+    <div style="width:300;height:50">
+        <br>
+        <div style="float:left" > British Accent Trainer </div>
+        <div style="float:right" > Icebreakers from the internet to spark your <br>tinder game when you need some inspiration </div><br>
+
+<div id="wrapper">
+    <div>
+    <input type="button" class="againbutton" value = "?">
+    </div>
+
+    <!--Background Sound-->
+
+
+
+    <!--Button Sound-->
+    <script>
+            function play(){
+                 var audio = document.getElementById("audio");
+                 audio.play();
+                           }
+             </script>
+          
+          <input type="button" class="againbutton" value="?"  onclick="play()">
+          <audio id="audio" src="https://osh2030.s3.amazonaws.com/img/hover.mp3" ></audio>
+
+
+    <!-- <div id="D4CMOM">d4c.mom</div> -->
+
+	<div id="strategyBox"><p id="strategyText">
+
+		<span class= "highlight"></span>
+		<div id="blank"><span class= "highlight2">Cat got your tongue? Click on the button for help.</span></div>
+	</p>
+	</div>
+</div>
+
+</body>
+
+<!-- Speech -->
+
+<div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  var commands = {
+    'show tps report': function() {
+      $('#tpsreport').animate({bottom: '-100px'});
+    }
+  };
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
+<script>
+if (annyang) {
+  // Add our commands to annyang
+  annyang.addCommands({
+    'hello': function() { alert('Hello world!'); }
+  });
+
+  // Tell KITT to use annyang
+  SpeechKITT.annyang();
+
+  // Define a stylesheet for KITT to use
+  SpeechKITT.setStylesheet('https://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/themes/flat.css');
+
+  // Render KITT's interface
+  SpeechKITT.vroom();
+}
+</script>
+
+</div>
+
+<script>
+
+    $(".againbutton").on("click",function(){
+
+	    $("#strategyText").css("display", "block");
+	    $("#blank").css("display", "none");
+	});
+
+    var localNameSpace = function() {
+        var obliqueStrategy = [
+            "Please mind the gap between the train and the platform edge"
+            , "Unexpected item in the bagging area"
+            , "Have a cup of tea. It'll warm you up"
+            , "Are you in the queue?"
+            , "Innit bruv"
+            , "Cheers"
+            , "fuck off, you twat"
+            , "oi lads lets go for a cheeky nandos"
+            , "Go on Mary, give it a good slapping"
+            , "Have you gone mad?"
+            , "Rubbish"
+            , "Hang on a minute"
+            , "Wanker"
+            , "my fam wuz mad deep up in the club the other day"
+
+        ];
+        
+        var api = {
+            bindButtonAction: function() {
+                $('#wrapper .againbutton').click(api.generateRandomStrategy);
+            }
+
+            , generateRandomStrategy: function() {
+                var randomOffset = Math.floor(Math.random() * 100) % obliqueStrategy.length;
+                $('#wrapper #strategyBox #strategyText .highlight').html( obliqueStrategy[randomOffset] );
+            }
+
+
+        };
+        
+        return api;
+    }();
+    
+    $(document).ready(function() {
+        localNameSpace.bindButtonAction();
+        localNameSpace.generateRandomStrategy();
+    });
+ </script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101173379-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>    
