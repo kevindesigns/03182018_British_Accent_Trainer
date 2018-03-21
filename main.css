@@ -5,12 +5,12 @@ body {font-family: 'Karla', sans-serif;}
 /*url(backgroundPhoto.jpg) no-repeat 0 0 fixed*/
 
 html {
-	background-color: rgb(209, 149, 149); 
+	background-color: rgb(255, 255, 255); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: rgb(2509, 149, 149);
+  background-color: rgb(255, 255, 255);
 }
 
 #about {
