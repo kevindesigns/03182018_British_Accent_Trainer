@@ -58,9 +58,8 @@
 if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
-    'Hello': function() {
-	    $("#strategyText").css("display", "block");
-	    $("#blank").css("display", "none");
+    'Start': function() {
+	    $('#wrapper .againbutton').click(api.generateRandomStrategy);
     }
   };
 
