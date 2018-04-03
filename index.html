@@ -119,6 +119,20 @@ if (annyang) {
 
 </div>
 
+<!-- After 5 phrases, show results page-->
+<div>
+    <script>
+            $(".againbutton").ready(function(){
+                var count = 0 ;
+                $(".againbutton").click(function(){
+                    count+=1;
+                    if (count==5)
+                        alert("Hello World");
+                });
+            });
+    </script>
+</div>
+
 <script>
 
     $(".againbutton").on("click",function(){
