@@ -64,13 +64,19 @@
 });
 </script>
 
+<script>
+    wavesurfer.load('http://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
+</script>
+
 <!-- wavesurfer.js microphone -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/plugin/wavesurfer.microphone.min.js"></script>
 
 <!-- microphone wavesurfer instance --> 
 <script>
 var wavesurfer = WaveSurfer.create({ container: '#waveform', waveColor: 'violet' });
+</script>
 
+<script>
 var microphone = Object.create(WaveSurfer.Microphone);
 
 microphone.init({
