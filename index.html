@@ -11,8 +11,6 @@
 
 <body>
 
-<div id="waveform"></div>
-
 <div id="about">
     <div style="width:300;height:50">
         <br>
@@ -55,16 +53,16 @@
 <!-- main wavesurfer.js lib -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/2.0.5/plugin/wavesurfer.cursor.js"></script>
 
-<!-- wavesurfer div goes here -->
-
-<!-- wavesurfer javascript instance -->
+<div id="waveform">
+    <!-- wavesurfer javascript instance -->
 <script>
-    var wavesurfer = WaveSurfer.create({
-    container: '#waveform',
-    waveColor: 'violet',
-    progressColor: 'purple'
-});
-</script>
+        var wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: 'violet',
+        progressColor: 'purple'
+    });
+    </script>
+</div>
 
 <script>
     wavesurfer.load('http://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
