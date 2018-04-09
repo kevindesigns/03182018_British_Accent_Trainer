@@ -53,20 +53,16 @@
 <!-- main wavesurfer.js lib -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/2.0.5/plugin/wavesurfer.cursor.js"></script>
 
-<div id="waveform">
+<div id="waveform"></div>
+
     <!-- wavesurfer javascript instance -->
-<script>
+    <script type="text/javascript">
         var wavesurfer = WaveSurfer.create({
         container: '#waveform',
         waveColor: 'violet',
         progressColor: 'purple'
     });
     </script>
-</div>
-
-<script>
-    wavesurfer.load('http://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
-</script>
 
 <!-- wavesurfer.js microphone -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/plugin/wavesurfer.microphone.min.js"></script>
