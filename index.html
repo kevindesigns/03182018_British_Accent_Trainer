@@ -18,6 +18,15 @@
         <div style="float:right" > A bunch of text on line one <br>even more text on line two </div><br>
 
 <div id="waveform"></div>
+    <!-- wavesurfer javascript instance -->
+    <script>
+            var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'violet',
+            progressColor: 'purple'
+        });
+            wavesurfer.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
+        </script>
 
 <div id="wrapper">
     <div>
@@ -55,15 +64,6 @@
 <!-- main wavesurfer.js lib -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/2.0.5/plugin/wavesurfer.cursor.js"></script>
 
-    <!-- wavesurfer javascript instance -->
-    <script>
-        var wavesurfer = WaveSurfer.create({
-        container: '#waveform',
-        waveColor: 'violet',
-        progressColor: 'purple'
-    });
-        wavesurfer.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
-    </script>
 
 <!-- Speech -->
 
