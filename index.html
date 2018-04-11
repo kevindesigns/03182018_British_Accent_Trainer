@@ -19,7 +19,10 @@
 
         <div id="waveform"></div>
 
-    <!-- wavesurfer javascript instance -->
+	    <!-- main wavesurfer.js lib -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/2.0.5/plugin/wavesurfer.cursor.js"></script>
+	    
+	        <!-- wavesurfer javascript instance -->
     <script>
             var wavesurfer = WaveSurfer.create({
             container: '#waveform',
@@ -61,12 +64,6 @@
 	</p>
 	</div>
 </div>
-
-</body>
-
-<!-- main wavesurfer.js lib -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/2.0.5/plugin/wavesurfer.cursor.js"></script>
-
 
 <!-- Speech -->
 
@@ -211,5 +208,5 @@ if (annyang) {
   ga('send', 'pageview');
 
 </script>
-
+</body>
 </html>    
