@@ -21,18 +21,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/2.0.5/plugin/wavesurfer.cursor.js"></script>
 
 <div id="waveform"></div>
-	    
-<!-- wavesurfer javascript instance -->
-<script>
-    var wavesurfer = WaveSurfer.create({
-    container: '#waveform',
-    waveColor: 'violet',
-    progressColor: 'purple'
-    });
-    var song = ('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
-    wavesurfer.load(song);
-    wavesurfer.on('ready', function () {wavesurfer.play();});
-    </script>
 
 <div id="wrapper">
     <div>
@@ -205,4 +193,17 @@ if (annyang) {
 
 </script>
 </body>
+
+<!-- wavesurfer javascript instance -->
+<script>
+        var wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: 'violet',
+        progressColor: 'purple'
+        });
+        var song = ('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
+        wavesurfer.load(song);
+        wavesurfer.on('ready', function () {wavesurfer.play();});
+        </script>
+        
 </html>    
