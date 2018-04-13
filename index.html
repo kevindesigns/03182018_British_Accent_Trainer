@@ -24,8 +24,8 @@
 
 <!-- wavesurfer javascript instance -->
 <script>
-        var wavesurfer = WaveSurfer.createElement({
-        container: '#waveform',
+       var wavesurfer = WaveSurfer.create({
+        container: document.querySelector('#waveform'),
         waveColor: 'violet',
         progressColor: 'purple'
         });
