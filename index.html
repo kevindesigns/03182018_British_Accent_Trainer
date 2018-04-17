@@ -86,7 +86,8 @@ if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
     'okay': function() {
-        $(".againbutton").click();   
+        $(".againbutton").click();
+        microphone.start();   
     }
     ,'please mind the gap between the train and the platform edge': function() {
         $(".againbutton").click();
