@@ -20,6 +20,11 @@ html {
     padding-left: 20px;
 }
 
+#wavesurfer {
+	width: 50%;
+	height: 50%
+}
+
 span.highlight{
 	background-color: white;
 	box-shadow: 1vw 0 0 white, -1vw 0 0  white;
