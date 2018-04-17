@@ -25,7 +25,10 @@
 
 <div id="wavesurfer"></div>
 
-<p document.onload="microphone.start()">
+<p align="center">
+        <button class="btn btn-primary btn-lg" onclick="microphone.start()">
+        Start the mic
+      </button>
       </p>
 
 <!-- wavesurfer javascript instance -->
@@ -90,7 +93,7 @@ if (annyang) {
   var commands = {
     'okay': function() {
         $(".againbutton").click();
-        microphone.start();   
+        "microphone.start()";   
     }
     ,'please mind the gap between the train and the platform edge': function() {
         $(".againbutton").click();
