@@ -23,9 +23,6 @@ html {
 #wavesurfer {
 	width: 15%;
 	height: 30%;
-	position: fixed;
-	bottom: 0;
-	left: 0;
 }
 
 span.highlight{
