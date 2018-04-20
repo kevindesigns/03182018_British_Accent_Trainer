@@ -63,7 +63,7 @@ span.highlight{
 .againbutton{
 	background-color:  #ec0047;
 	color: white;
-	position: fixed;
+	position: center;
 	margin-top: 25vw;
 	margin-left: 45%;
 	width: 3vw;
