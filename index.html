@@ -26,31 +26,12 @@
 <div id="wavesurfer"></div>
 
 <p align="center">
-        <input type="button" class="againbutton" value="?" onclick="microphone.start()">
+        <button class="btn btn-primary btn-lg" onclick="microphone.start()">
         Start the mic
       </button>
       </p>
 
-<!-- wavesurfer javascript instance -->
-<script>
-    var wavesurfer = WaveSurfer.create({
-    container: '#wavesurfer',
-    waveColor: 'violet',
-    progressColor: 'purple'
-});
-    var microphone = Object.create(WaveSurfer.Microphone);
 
-    microphone.init({
-        wavesurfer: wavesurfer
-});
-
-    microphone.on('deviceReady', function(stream) {
-        console.log('Device ready!', stream);
-});
-    microphone.on('deviceError', function(code) {
-        console.warn('Device error: ' + code);
-});
-</script>
 
 <div id="wrapper">
     <div>
@@ -93,6 +74,7 @@ if (annyang) {
   var commands = {
     'okay': function() {
         $(".againbutton").click();
+        "microphone.start()";   
     }
     ,'please mind the gap between the train and the platform edge': function() {
         $(".againbutton").click();
@@ -222,6 +204,28 @@ if (annyang) {
   ga('send', 'pageview');
 
 </script>
+
+<!-- wavesurfer javascript instance -->
+<script>
+        var wavesurfer = WaveSurfer.create({
+        container: '#wavesurfer',
+        waveColor: 'violet',
+        progressColor: 'purple'
+    });
+        var microphone = Object.create(WaveSurfer.Microphone);
+    
+        microphone.init({
+            wavesurfer: wavesurfer
+    });
+    
+        microphone.on('deviceReady', function(stream) {
+            console.log('Device ready!', stream);
+    });
+        microphone.on('deviceError', function(code) {
+            console.warn('Device error: ' + code);
+    });
+    </script>
+    
 </body>
 
 </html>    
