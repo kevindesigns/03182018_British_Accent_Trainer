@@ -40,18 +40,6 @@
 
     <!--Background Sound-->
 
-    <!--Button Sound-->
-    <script>
-            function play(){
-                 var audio = document.getElementById("audio");
-                 audio.play();
-                           }
-             </script>
-          
-          <input type="button" class="againbutton" value="?"  onclick="play()">
-          <audio id="audio" src="https://osh2030.s3.amazonaws.com/img/hover.mp3" ></audio>
-
-
     <!-- <div id="D4CMOM">d4c.mom</div> -->
 
 	<div id="strategyBox"><p id="strategyText">
@@ -205,6 +193,17 @@ if (annyang) {
 
 </script>
 
+ <!--Button Sound-->
+ <script>
+        function play(){
+             var audio = document.getElementById("audio");
+             audio.play();
+                       }
+         </script>
+      
+      <input type="button" class="againbutton" value="?"  onclick="play()">
+      <audio id="audio" src="https://osh2030.s3.amazonaws.com/img/hover.mp3" ></audio>
+
 <!-- wavesurfer javascript instance -->
 <script>
         var wavesurfer = WaveSurfer.create({
@@ -225,7 +224,7 @@ if (annyang) {
             console.warn('Device error: ' + code);
     });
     </script>
-    
+
 </body>
 
 </html>    
