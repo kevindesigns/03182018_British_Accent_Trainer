@@ -132,6 +132,18 @@ if (annyang) {
     </script>
 </div>
 
+
+ <!--Button Sound-->
+ <script>
+        function play(){
+             var audio = document.getElementById("audio");
+             audio.play();
+                       }
+         </script>
+      
+      <input type="button" class="againbutton" value="?"  onclick="play()">
+      <audio id="audio" src="https://osh2030.s3.amazonaws.com/img/hover.mp3" ></audio>
+      
 <script>
 
     $(".againbutton").on("click",function(){
@@ -192,17 +204,6 @@ if (annyang) {
   ga('send', 'pageview');
 
 </script>
-
- <!--Button Sound-->
- <script>
-        function play(){
-             var audio = document.getElementById("audio");
-             audio.play();
-                       }
-         </script>
-      
-      <input type="button" class="againbutton" value="?"  onclick="play()">
-      <audio id="audio" src="https://osh2030.s3.amazonaws.com/img/hover.mp3" ></audio>
 
 <!-- wavesurfer javascript instance -->
 <script>
