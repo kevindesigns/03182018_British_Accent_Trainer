@@ -75,6 +75,7 @@ span.highlight{
 	font-size: 1.5vw;
 	word-wrap: break-word;
 	text-align: center;
+	z-index: 2;
 }
 
 .againbutton:hover{
@@ -100,6 +101,7 @@ span.highlight{
 	margin-left: 41%;
 	font-family: Karla, Arial, Helvetica, sans-serif;
 	font-size: 1vw;
+	z-index: 2;
 }
 
 
@@ -113,6 +115,7 @@ span.highlight{
 	display: none;
 	margin-top: 11vw;
 	margin-left: 31%;
+	z-index: 2;
 }
 
 #blank{
