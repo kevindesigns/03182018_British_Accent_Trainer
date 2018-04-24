@@ -51,6 +51,17 @@
     </p>
 </div>
 
+<!--Button Sound-->
+<script>
+        function play(){
+            var audio = document.getElementById("audio");
+            audio.play();
+            }
+    </script>
+          
+          <input type="button" class="againbutton" value="?"  onclick="play()">
+          <audio id="audio" src="https://osh2030.s3.amazonaws.com/img/hover.mp3" ></audio>
+
 <script>
 annyang.setLanguage('en-GB');
 
@@ -128,18 +139,7 @@ if (annyang) {
             });
     </script>
 </div>
-
-
- <!--Button Sound-->
- <script>
-        function play(){
-             var audio = document.getElementById("audio");
-             audio.play();
-                       }
-         </script>
       
-      <input type="button" class="againbutton" value="?"  onclick="play()">
-      <audio id="audio" src="https://osh2030.s3.amazonaws.com/img/hover.mp3" ></audio>
 <script>
 
     $(".againbutton").on("click",function(){
@@ -166,7 +166,7 @@ if (annyang) {
             , "What a load of poppycock!"
 
         ];
-        
+
         var api = {
             bindButtonAction: function() {
                 $('#wrapper .againbutton').click(api.generateRandomStrategy);
