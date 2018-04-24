@@ -24,7 +24,7 @@ html {
 	width: 15%;
 	height: 30%;
 	position: center;
-	z-index: 1;
+	z-index: 10;
 	margin-left: 42%;
 	clip: rect(0px,60px,200px,0px);
 }
