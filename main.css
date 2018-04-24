@@ -24,9 +24,9 @@ html {
 	width: 15%;
 	height: 30%;
 	position: center;
-	z-index: 10;
-	margin-left: 42%;
-	clip: rect(0px,60px,200px,0px);
+	z-index: -1;
+	margin-left: 41%;
+	padding-top: 300px;
 }
 
 span.highlight{
