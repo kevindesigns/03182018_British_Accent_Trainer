@@ -99,10 +99,11 @@ span.highlight{
 	position: center;
 	color: #005eec;
 	margin-top: 18vw;
-	margin-left: 41%;
+	margin-left: 28%;
 	font-family: Karla, Arial, Helvetica, sans-serif;
 	font-size: 1vw;
 	z-index: 2;
+	text-align: center;
 }
 
 
@@ -115,8 +116,9 @@ span.highlight{
 	position: center;
 	display: none;
 	margin-top: 11vw;
-	margin-left: 31%;
+	margin-left: 28%;
 	z-index: 2;
+	text-align: center;
 }
 
 #blank{
@@ -127,7 +129,8 @@ span.highlight{
 	color: #ec0047;
 	position: center;
 	margin-top: 11vw;
-	margin-left: 31%;	
+	margin-left: 28%;
+	text-align: center;	
 }
 
 
