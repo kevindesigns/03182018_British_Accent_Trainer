@@ -30,6 +30,11 @@ html {
 	padding-left: 600px;
 }
 
+#btn {
+	padding-top: 275px;
+	padding-left: 600px;
+}
+
 span.highlight{
 	background-color: white;
 	box-shadow: 1vw 0 0 white, -1vw 0 0  white;
