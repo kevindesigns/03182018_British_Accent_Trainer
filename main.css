@@ -26,6 +26,7 @@ html {
 	position: center;
 	z-index: 1;
 	margin-left: 42%;
+	clip: rect(0px,60px,200px,0px);
 }
 
 span.highlight{
