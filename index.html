@@ -23,19 +23,10 @@
         <div style="float:left" > Trainer </div>
         <div style="float:right" > A bunch of text on line one <br>even more text on line two </div><br>
 
-
 <div id="wrapper">
     <div>
     <input type="button" class="againbutton" value = "?">
     </div>
-
-<div id="wavesurfer"></div>
-
-<p align="center">
-        <button class="btn btn-primary btn-lg" onclick="microphone.start()">
-        Start the mic
-      </button>
-      </p>
 
     <!--Background Sound-->
 
@@ -48,6 +39,15 @@
 	</p>
 	</div>
 </div>
+
+<div>
+        <div id="wavesurfer"></div>
+        <p align="center">
+                <button class="btn btn-primary btn-lg" onclick="microphone.start()">
+                Start the mic
+              </button>
+              </p>
+        </div>
 
 <!-- Speech -->
 
@@ -142,7 +142,6 @@ if (annyang) {
       
       <input type="button" class="againbutton" value="?"  onclick="play()">
       <audio id="audio" src="https://osh2030.s3.amazonaws.com/img/hover.mp3" ></audio>
-      
 <script>
 
     $(".againbutton").on("click",function(){
