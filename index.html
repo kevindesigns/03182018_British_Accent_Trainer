@@ -7,6 +7,9 @@
 <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+<!-- Emoji -->
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
 <!-- Speech -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
 
@@ -23,7 +26,7 @@
 <div id="about">
     <div style="width:300;height:50">
         <br>
-        <div style="float:left" > The Great <br> British Accent Trainer </div>
+        <div style="float:left" > The Great <br> <i class="em em-gb"></i> Accent Trainer </div>
         <div style="float:right" > If the words don't change, <br>it means you aren't British enough </div><br>
 
 <div id="wrapper">
@@ -37,7 +40,7 @@
 <div id="strategyBox"><p id="strategyText">
 
 	<span class= "highlight"></span>
-	<div id="blank"><span class= "highlight2">Say 'Okay' to start. Repeat the following words and phrases in your best British accent to win</span></div>
+	<div id="blank"><span class= "highlight2">Say 'Okay' to start. Repeat the following words and phrases in your best British accent to "win."</span></div>
 	</p>
     </div>
 
@@ -95,6 +98,9 @@ if (annyang) {
     ,'unexpected item in the bagging area': function() {
         $(".againbutton").click();
     }
+    ,'brilliant': function() {
+        $(".againbutton").click();
+    }
   };
 
   // Add our commands to annyang
@@ -146,6 +152,7 @@ if (annyang) {
             , "Hang on a minute!"
             , "Wanker"
             , "What a load of poppycock!"
+            , "Brilliant"
 
         ];
 
